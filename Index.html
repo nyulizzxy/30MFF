@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NYU New York or Abu Dhabi?</title>
+ 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="Style.css">
+
+
+
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#home" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#video" class="w3-button w3-block w3-black">VIDEO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">A Native New Yorker in Abu Dhabi</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:85px">What If?</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white" style="font-size:20px" >Elizabeth Doan</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Me -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>Hi! I'm Liz. I'm Vietnamese-American, born and raised in New York City. I'm interested in content creation, jewelry-making, and spending all day on roller coasters! Being a Native New Yorker didn't mean much to me before university, rather, being Vietnamese was the identity I was more proud over. It wasn't until I came to NYU in Abu Dhabi that I started feeling differently about my New Yorker identity.  </p>
+    <p>More about me: NYU (the one in New York) was my dream university since I was in sixth grade. My decision to go to NYU Abu Dhabi </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Everything happens for a reason~" </i></p>
+      <p>*ੈ✩₊˚༺☆༻*ੈ✩₊˚</p>
+    </div>
+    <img src="Media/nyad.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+  </div>
+</div>
+
+<!-- The Crisis -->
+<div class="w3-container" id="video">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE CRISIS</span></h5>
+  
+    <video width="700"  controls>
+      <source src="Media/movie.mp4" type="video/mp4">
+    </video>
+
+
+  </div>
+</div>
+
+<!-- Contact Me -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT ME</span></h5>
+   
+    <p> Send me a message below: </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>With Love ʚ♡ɞ</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("video");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+

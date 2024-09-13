@@ -1,0 +1,28 @@
+body{ 
+    background-color: #f0f0f0;
+    font-family: 'Reddit Sans Condensed', sans-serif; 
+    } 
+    h1 { 
+    color: #333; 
+    } 
+    p { 
+    font-size: 16px; 
+    }
+    
+
+
+body, html {
+  height: 100%;
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Media/nyad.jpg");
+  min-height: 75%;
+}
+
+.video {
+    display: none;
+  }
