@@ -1,0 +1,135 @@
+
+header{
+  background-color: #cdd6f6;
+
+
+}
+
+
+body{ 
+  background-color: #cdd6f6;
+  font-family: 'Reddit Sans Condensed', sans-serif; 
+  } 
+
+  p{
+    font-size: 23px
+  }
+
+
+.w3-tag {
+  font-family: 'Reddit Sans Condensed', sans-serif;
+}
+.w3-container {
+  background-color: #e6eeff; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px #c5c5c51a; 
+  margin-bottom: 20px; 
+}
+
+
+footer{
+  background-color: #cdd6f6;
+}
+
+.bgimg {
+
+position: relative;
+width: 100%;
+height: 75vh;
+overflow: hidden;
+}
+
+
+.video {
+  display: none;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* slider */
+* {box-sizing: border-box;}
+
+.img-comp-container {
+position: relative;
+height: 100%; /*should be the same height as the images*/
+width: 100%;
+}
+
+.img-comp-img {
+position: absolute;
+width: 100%;
+height: 100%;
+overflow:hidden;
+}
+
+.img-comp-img img {
+/* display:block;
+vertical-align:middle; */
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: left center;
+}
+
+.img-comp-slider {
+position: absolute;
+z-index:10;
+cursor: ew-resize;
+/*set the appearance of the slider:*/
+width: 40px;
+height: 40px;
+background-color: #2196F3;
+opacity: 0.7;
+border-radius: 50%;
+top:50%;
+transform: translateY(-50%);
+}
+
+
+
+/* Gallery container */
+.w3-container#gallery {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the columns horizontally */
+  gap: 10px; /* Adjusts the spacing between columns */
+}
+
+.column {
+  flex: 1;
+  max-width: 25%; /* Controls the number of columns */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the box without distortion */
+  max-height: 200px; /* Adjust this value to control image height */
+  margin-bottom: 10px; /* Spacing below each image */
+  border-radius: 10px; 
+}
+
+
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  max-height: 100%;
+}
+
+div.scroll-container img {
+  padding: 5px;
+}
